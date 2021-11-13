@@ -1,0 +1,35 @@
+{
+    "name": "nekoimi/lawoole",
+    "description": "lawoole",
+    "keywords": [
+        "swoole",
+        "laravel",
+        "lumen",
+        "http",
+        "server",
+        "lawoole"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nekoimi",
+            "email": "nekoimime@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-zlib": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10",
+        "swoole/ide-helper": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lawoole\\": "src/"
+        }
+    }
+}
