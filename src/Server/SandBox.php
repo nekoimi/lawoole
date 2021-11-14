@@ -138,8 +138,8 @@ class SandBox
         $app->instance(\Illuminate\Container\Container::class, $app);
 
         if ($this->framework === 'lumen') {
-            if (class_exists("Laravel\Lumen\Application::class")) {
-                $app->instance("Laravel\Lumen\Application::class", $app);
+            if (class_exists(\Laravel\Lumen\Application::class)) {
+                $app->instance(\Laravel\Lumen\Application::class, $app);
             }
         }
 

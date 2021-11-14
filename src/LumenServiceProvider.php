@@ -34,6 +34,6 @@ class LumenServiceProvider extends HttpServiceProvider
 
     protected function pushAccessLogMiddleware()
     {
-        $this->app->middleware(AccessLog::class);
+        $this->app->middleware([AccessLog::class]);
     }
 }

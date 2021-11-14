@@ -418,7 +418,7 @@ class Manager
      */
     protected function loadApplication(): void
     {
-        if (!$this->app instanceof Container) {
+        if (!$this->getApp() instanceof Container) {
             $this->app = require "{$this->basePath}/bootstrap/app.php";;
             $this->bootstrap();
         }
